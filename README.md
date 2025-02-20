@@ -35,7 +35,7 @@
 2. Установите расширение, нажав на кнопку **"Добавить в браузер"**.
 
 ### **Шаг 2: Установка скрипта**
-1. Перейдите по ссылке для установки скрипта: [Установить YandexBlocker](https://github.com/Danillchen/YandexBlocker/raw/main/yandex-ads-blocker.user.js).
+1. Перейдите по ссылке для установки скрипта: [Установить YandexBlocker](https://raw.githubusercontent.com/Danillchen/YandexBlocker/refs/heads/main/YandexBlocker.user.js.).
 2. Нажмите "Установить" в открывшемся окне Tampermonkey.
 
 ### **Шаг 3: Проверка работы скрипта**
