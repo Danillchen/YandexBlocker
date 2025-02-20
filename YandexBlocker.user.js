@@ -1,13 +1,17 @@
 // ==UserScript==
 // @name         Yandex Ads Blocker
 // @namespace    http://tampermonkey.net/
-// @version      2.2
+// @version      2.3
 // @description  Блокирует рекламу в Яндекс.Видео и на странице поиска (раздельные правила)
 // @author       DaHexv
 // @match        *://yandex.ru/video/*
 // @match        *://yandex.com/video/*
+// @match        *://ya.ru/video/*
+// @match        *://ya.com/video/*
 // @match        *://yandex.ru/search/*
 // @match        *://yandex.com/search/*
+// @match        *://ya.ru/search/*
+// @match        *://ya.com/search/*
 // @grant        none
 // ==/UserScript==
 
@@ -54,11 +58,13 @@
         });
     }
 
-    if (window.location.href.includes("yandex.ru/video") || window.location.href.includes("yandex.com/video")) {
+    if (window.location.href.includes("yandex.ru/video") || window.location.href.includes("yandex.com/video") ||
+        window.location.href.includes("ya.ru/video") || window.location.href.includes("ya.com/video")) {
         setInterval(removeVideoAds, 100);
     }
 
-    if (window.location.href.includes("yandex.ru/search") || window.location.href.includes("yandex.com/search")) {
+    if (window.location.href.includes("yandex.ru/search") || window.location.href.includes("yandex.com/search") ||
+        window.location.href.includes("ya.ru/search") || window.location.href.includes("ya.com/search")) {
         setInterval(removeSearchAds, 100);
     }
 })();
