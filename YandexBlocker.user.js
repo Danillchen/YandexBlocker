@@ -12,6 +12,8 @@
 // @match        *://yandex.com/search/*
 // @match        *://ya.ru/search/*
 // @match        *://ya.com/search/*
+// @match        *://yandex.ru/*
+// @match        *://ya.ru/*
 // @grant        none
 // ==/UserScript==
 
